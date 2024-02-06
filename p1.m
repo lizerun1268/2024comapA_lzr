@@ -17,7 +17,7 @@ f=@(t,x)[-a*x(1)-b*x(1)+hy*x(4);
         ];
 % [t,x]=ode45(f,[0,1000],[20,50,1,1,50,1]);
 N=1000;
-[t,x]=rk_4(f,[0,400],[20,80,1,1,50,10],N);%N:分辨率,把时间长度划分成N+1份。
+[t,x]=rk_4(f,[0,400],[20,80,1,1,50,10],N);%N:Resolution, dividing the length of time into N+1 parts
 t=t/6;
 figure(1)
 hold on
